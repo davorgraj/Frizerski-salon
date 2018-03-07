@@ -30,7 +30,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="#">Kaj nudimo</a>
                 </li>
                 <li class="nav-item">
@@ -40,12 +40,35 @@
                   <a class="nav-link" href="#">FAQ</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">O nas</a>
+                  <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#" >O nas</a>
                 </li>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">O nas</h5>
+                      </div>
+                      <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                         Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                      </div>
+                      <img src="/img/o-nas.jpg" class="img-fluid" alt="">
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zapri</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </ul>
+
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               </form>
+
             </div>
           </nav>
         </div>
@@ -57,13 +80,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="https://dummyimage.com/1200x1000/000/fff" alt="First slide">
+              <img class="d-block w-100 img-fluid" src="/img/banner-1.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://dummyimage.com/1200x1000/877d87/717173" alt="Second slide">
+              <img class="d-block w-100 img-fluid" src="/img/banner-2.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="https://dummyimage.com/1200x1000/595959/000000" alt="Third slide">
+              <img class="d-block w-100 img-fluid" src="/img/banner-3.jpeg" alt="Third slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -264,7 +287,7 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-md text-light">
+          <div class="col-md text-light left">
             <h4>Kontakt</h4>
             <p>Frizerski salon s.p <br>
             Davčna št.: 55555555 <br>
@@ -289,7 +312,7 @@
                 <a class="nav-link" href="#">FAQ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">O nas</a>
+                <a class="nav-link" data-toggle="modal" data-target="#exampleModal" href="#">O nas</a>
               </li>
             </ul>
           </div>
